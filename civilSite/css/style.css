@@ -1,0 +1,327 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar{
+  background:#7aaec4;
+  height: 2.8rem;
+  /* padding: .5rem 0; */
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+/*============= NAVIGATION =============*/
+
+.navbar-brand img{
+  height: 3rem;
+}
+.navbar{
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  box-shadow:0 .5rem .5rem rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+.nav-item{
+  padding: .5rem;
+}
+.nav-link{
+  color: #5b5555!important;
+}
+.nav-link.active,
+.nav-link:hover {
+  color:#4981b3!important;
+}
+/*============= CAROUSEL =============*/
+
+#carousel{
+  box-shadow: 0 1rem  1rem rgba(0, 0, 0, .1);
+
+
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active{
+  transition: transform 1.2s ease;
+}
+
+/*-- Carousel Content --*/
+.carousel-caption {
+position: absolute;
+top: 54%;
+transform: translateY(-90%);
+text-transform: uppercase;
+}
+.bg-custom{
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
+  border-radius: 1rem;
+}
+.btn-danger{
+  background-color: #AC2615;
+  border:.1rem solid #AC2615;
+}
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+}
+
+
+/*-- Emoji Navbar --*/
+
+
+
+/*============= FOOTER =============*/
+footer{
+  background-color:#383838;
+  /* padding: 1rem 2rem 3rem; */
+}
+footer img{
+  height: 3.5rem;
+  margin: 1.5rem auto;
+}
+footer p, footer a,
+.socket a {
+  color: white;
+  text-decoration: none;
+}
+ul.social{
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+}
+ul.social li{
+  margin: 0 auto;
+}
+footer .svg-inline--fa {
+  font-size: 1.6rem;
+}
+footer .svg-inline-fa:hover{
+  columns: #68a0d2;
+}
+
+
+/*============= SOCKET =============*/
+.socket{
+  background-color:#222222;
+  border-top: .1rem solid #4981b3;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/* container designing */
+h3
+{
+  color:rgb(118, 12, 144);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.Modal
+{box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+/* card logo */
+.card-img-top
+{
+  height: 250px;
+  width: 100%;
+}
+
+
+/*-- Carousel Content --*/
+.carousel-caption {
+  position:  absolute;
+  top: 54%;
+  transform: translateY(-90%);
+  text-transform: uppercase;
+  }
+  .bg-custom{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+  }
